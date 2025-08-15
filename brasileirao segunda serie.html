@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Museu Virtual da Série B</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Menu superior */
+    .menu {
+      width: 100%;
+      background-color: #d8bfd8; /* lilás suave */
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .menu h1 {
+      font-size: 72px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .menu nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .menu nav a {
+      font-size: 32px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Abas retangulares */
+    .abas-retangulares {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 60px 0;
+    }
+
+    .aba {
+      font-size: 36px;
+      padding: 30px 50px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 300px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    /* Cores das abas */
+    .lilas { background-color: #c8a2c8; color: #fff; }
+    .branco { background-color: #fff; color: #000; border: 2px solid #ccc; }
+    .dourado { background-color: #ffd700; color: #000; }
+    .rosa { background-color: #ff69b4; color: #fff; }
+
+    .aba:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #aaa;
+    }
+
+    /* Tópicos com grupos */
+    .topicos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      max-width: 1200px;
+      margin-bottom: 80px;
+    }
+
+    .grupo h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .grupo ul {
+      list-style: none;
+      font-size: 32px;
+      line-height: 1.8;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #d8bfd8;
+      color: #fff;
+      padding: 40px;
+      font-size: 28px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header class="menu">
+    <h1>MUSEU VIRTUAL DA SÉRIE B</h1>
+    <nav>
+      <ul>
+        <li><a href="#">INÍCIO</a></li>
+        <li><a href="#">CLUBES</a></li>
+        <li><a href="#">HISTÓRIA</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="abas-retangulares">
+    <a class="aba lilas" href="#">Atlético Mineiro</a>
+    <a class="aba lilas" href="#">Amazonas</a>
+    <a class="aba lilas" href="#">Goiás</a>
+    <a class="aba  lilas" href="#">Coritiba</a>
+    <a class="aba lilas" href="#">Mirassol</a>
+  </section>
+
+  <main class="topicos">
+    <div class="grupo">
+      <h2>Grupo 1</h2>
+      <ul>
+        <li>Atlético Mineiro</li>
+        <li>Amazonas</li>
+        <li>Goiás</li>
+        <li>Coritiba</li>
+        <li>Mirassol</li>
+      </ul>
+    </div>
+    <div class="grupo">
+      <h2>Grupo 2</h2>
+      <ul>
+        <li>Chapecoense</li>
+        <li>Cruzeiro</li>
+        <li>Sport</li>
+        <li>Vila Nova</li>
+        <li>Botafogo-SP</li>
+      </ul>
+    </div>
+    <div class="grupo">
+      <h2>Grupo 3</h2>
+      <ul>
+        <li>Brusque</li>
+        <li>Ituano</li>
+        <li>Ferroviário</li>
+        <li>Sampaio Corrêa</li>
+        <li>Amazonas FC</li>
+      </ul>
+    </div>
+    <div class="grupo">
+      <h2>Grupo 4</h2>
+      <ul>
+        <li>Mirassol</li>
+        <li>Criciúma</li>
+        <li>Novorizontino</li>
+        <li>Ponte Preta</li>
+        <li>Ceará</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Criado por Maria | Museu Virtual da Série B</p>
+  </footer>
+</body>
+</html>
